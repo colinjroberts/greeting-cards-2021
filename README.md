@@ -4,10 +4,23 @@
 
 Partially automated generation of personalized greeting cards for friends and family in 2021, made using a 2-D plotter.
 
+## Run this Code
+Like for many projects, it is recommended you use a [https://docs.python.org/3/tutorial/venv.html](virtual environment) to avoid package conflicts. 
+
+```
+git clone https://github.com/colinjroberts/greeting-cards-2021.git
+cd greeting-cards-2021
+pip install 'vpype[all]'
+pip install requirements.txt
+```
+
+vpype requirements are first installed separately to avoid potential problems. For more information on vpype installion, see [https://vpype.readthedocs.io/en/stable/install.html](vpype's documentation)
+
+
 ## Code and Description
 
 ### Directory Structure
-This script assumes the file directory below. Scripts used are assumed to be run from the data directory.
+This script assumes the file directory below. Scripts should be executed from the root directory of this project.
 |- .
 |- data
 |  |- card-fronts.py
