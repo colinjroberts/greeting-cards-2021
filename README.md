@@ -43,10 +43,10 @@ This script assumes the file directory below. Scripts should be executed from th
 
 - data: holds scripts and recipient data
 - inside: holds all info needed for generating card insides
-- inside>per-person>11x17>combined: holds aggregated 11x17 files, 2 svgs for roughly every 4 cards
-- inside>per-person>11x17>individual: holds individual 11x17 files, 2 svgs for roughly every card
-- inside>per-person>person-maps: holds customized maps for each person
-- inside>per-person>templates: holds template maps
+- inside>11x17>combined: holds aggregated 11x17 files, 2 svgs for roughly every 4 cards
+- inside>11x17>individual: holds individual 11x17 files, 2 svgs for roughly every card
+- inside>person-maps: holds customized maps for each person
+- inside>templates: holds template maps
 - outside: holds all info needed for generating card insides
 - outside>11x17>combined: holds 2 aggregated 11x17 svgs (one for each layer of the outside)
 - outside>11x17>individual: holds 8 11x17 svgs (one for each corner of each layer of the outside)
