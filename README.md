@@ -41,19 +41,20 @@ This script assumes the file directory below. Scripts should be executed from th
       └── individual
 ```
 
-- data: holds scripts and recipient data
-- inside: holds all info needed for generating card insides
-- inside>11x17>combined: holds aggregated 11x17 files, 2 svgs for roughly every 4 cards
-- inside>11x17>individual: holds individual 11x17 files, 2 svgs for roughly every card
-- inside>person-maps: holds customized maps for each person
-- inside>templates: holds template maps
-- outside: holds all info needed for generating card insides
-- outside>11x17>combined: holds 2 aggregated 11x17 svgs (one for each layer of the outside)
-- outside>11x17>individual: holds 8 11x17 svgs (one for each corner of each layer of the outside)
+- **data**: holds scripts and recipient data
+- **inside**: holds all info needed for generating card insides
+- **inside>11x17>combined**: holds aggregated 11x17 files, 2 svgs for roughly every 4 cards
+- **inside>11x17>individual**: holds individual 11x17 files, 2 svgs for roughly every card
+- **inside>person-maps**: holds customized maps for each person
+- **inside>templates**: holds template maps
+- **outside**: holds all info needed for generating card insides
+- **outside>11x17>combined**: holds 2 aggregated 11x17 svgs (one for each layer of the outside)
+- **outside>11x17>individual**: holds 8 11x17 svgs (one for each corner of each layer of the outside)
 
 ### Inputs
 
 **Recipient Data**
+
 A table of recipient data. This year's spreadsheet contained the following columns (though not all were used in this code). The example csv uses fake data, though the GPS locations are real random locations found in those cities.
 
 - CardInsideName: Salutation name to use inside cards
@@ -74,6 +75,7 @@ A table of recipient data. This year's spreadsheet contained the following colum
 - CalcDistance: Distance between my location and the recipient calculated in-spreadsheet using the Haversine formula 
 
 **Map Templates**
+
 These are one map per location, for example one svg for the USA, one svg covering several continents and the atlantic ocean, one svg for my state, etc. Each template map has 3 layers in this order: map, arc from me (sender) to the recipient, and bounding box rectangle (5.5in x 8.5in; 139.7mm x 215.9mm) used later for checking positioning.
 
 Map template files are included in the templates folder (licenses below) as examples of how the code can be used. Users should provide their own maps.
@@ -82,6 +84,7 @@ Map template files are included in the templates folder (licenses below) as exam
 - Atlantic and Pacific generated using [https://www.amcharts.com/docs/v4/](amCharts v4) - [https://creativecommons.org/licenses/by-nc/4.0/](Creative Commons Attribution-NonCommercial 4.0 International License)
 
 **Custom Map Files**
+
 After creating template map svgs, I used the spreadsheet to copy one template for each person named using the MapFullFileName field. Then I manually opened each file and adjusted the arc on layer 2 to show roughly the correct sender and recipient locations.
 
 ### Outputs
