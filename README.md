@@ -20,22 +20,26 @@ vpype requirements are first installed separately to avoid potential problems. F
 
 ### Directory Structure and Files
 This script assumes the file directory below. Scripts should be executed from the root directory of this project.
-|- .
-|- data
-|  |- card-fronts.py
-|  |- card-insides-per-person.py
-|  |- envelopes.py
-|  |- card-recipients.csv
-|- inside
-   |- 11x17
-   |  |- combined
-   |  |- individual
-   |- person-maps
-   |- templates
-|- outside
-   |- 11x17
-      |- combined
-      |- individual
+```
+.
+├── code
+│   ├── card-fronts.py
+│   ├── card-insides-per-person.py
+│   └── envelopes.py
+├── data
+│   └── card-recipients.csv
+├── envelopes
+├── inside
+│   ├── 11x17
+│   │  ├── combined
+│   │  └── individual
+│   ├── person-maps
+│   └── templates
+└── outside
+   └── 11x17
+      ├── combined
+      └── individual
+```
 
 - data: holds scripts and recipient data
 - inside: holds all info needed for generating card insides
