@@ -39,7 +39,7 @@ This script assumes the file directory below. Scripts used are assumed to be run
 ### Inputs
 
 **Recipient Data**
-A table of recipient data. This year's spreadsheet contained the following columns (though not all were used in this code)
+A table of recipient data. This year's spreadsheet contained the following columns (though not all were used in this code). The example csv uses fake data, though the GPS locations are real random locations found in those cities.
 
 - CardInsideName: Salutation name to use inside cards
 - MapBaseFile: name of the template map file to use without file extension
@@ -49,7 +49,6 @@ A table of recipient data. This year's spreadsheet contained the following colum
 - Units: Units distance should be displayed in (km or mi)
 - MessageLength: Length of characters in message to help debug messages that were too long
 - AddressName: Name to use on envelope
-- AddrConfirmed: Y/N flag for confirming addresses before starting the process
 - AddressLine1: Line 1 of address, the unit number and street in many cases
 - AddressLine2: Line 2 of address, the city, state, and zip code in many cases
 - AddressLine3: Line 3 of address, the country in many cases
