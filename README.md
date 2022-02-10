@@ -14,12 +14,11 @@ pip install 'vpype[all]'
 pip install requirements.txt
 ```
 
-vpype requirements are first installed separately to avoid potential problems. For more information on vpype installion, see [https://vpype.readthedocs.io/en/stable/install.html](vpype's documentation)
-
+vpype requirements are first installed separately to avoid potential problems. For more information on vpype installation, see [https://vpype.readthedocs.io/en/stable/install.html](vpype's documentation)
 
 ## Code and Description
 
-### Directory Structure
+### Directory Structure and Files
 This script assumes the file directory below. Scripts should be executed from the root directory of this project.
 |- .
 |- data
@@ -28,12 +27,11 @@ This script assumes the file directory below. Scripts should be executed from th
 |  |- envelopes.py
 |  |- card-recipients.csv
 |- inside
-|  |- per-person
-|     |- 11x17
-|     |  |- combined
-|     |  |- individual
-|     |- person-maps
-|     |- templates
+   |- 11x17
+   |  |- combined
+   |  |- individual
+   |- person-maps
+   |- templates
 |- outside
    |- 11x17
       |- combined
@@ -72,7 +70,12 @@ A table of recipient data. This year's spreadsheet contained the following colum
 - CalcDistance: Distance between my location and the recipient calculated in-spreadsheet using the Haversine formula 
 
 **Map Templates**
-These are one map per location, for example one svg for the USA, one svg covering several continents and the atlantic ocean, one svg for my state, etc. Each template map has 3 layers in this order: map, arc from me (sender) to the recipient, and bounding box rectangle (5.5in x 8.5in; 139.7mm x 215.9mm) used later for checking positioning. 
+These are one map per location, for example one svg for the USA, one svg covering several continents and the atlantic ocean, one svg for my state, etc. Each template map has 3 layers in this order: map, arc from me (sender) to the recipient, and bounding box rectangle (5.5in x 8.5in; 139.7mm x 215.9mm) used later for checking positioning.
+
+Map template files are included in the templates folder (licenses below) as examples of how the code can be used. Users should provide their own maps.
+Washington modified from [https://commons.wikimedia.org/wiki/File:Map_of_Washington_counties,_blank.svg](Wikipedia) - Public Domain
+USA modified from [https://www.amcharts.com/svg-maps/?map=usa](amCharts) - [https://creativecommons.org/licenses/by-nc/4.0/](Creative Commons Attribution-NonCommercial 4.0 International License)
+Atlantic and Pacific generated using [https://www.amcharts.com/docs/v4/](amCharts v4) - [https://creativecommons.org/licenses/by-nc/4.0/](Creative Commons Attribution-NonCommercial 4.0 International License)
 
 **Custom Map Files**
 After creating template map svgs, I used the spreadsheet to copy one template for each person named using the MapFullFileName field. Then I manually opened each file and adjusted the arc on layer 2 to show roughly the correct sender and recipient locations.
