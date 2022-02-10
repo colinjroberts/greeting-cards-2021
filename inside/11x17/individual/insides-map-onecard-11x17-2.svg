@@ -6,7 +6,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:source>vpype read /Users/cj/Documents/Projects/greeting-cards-2021/inside/person-maps/p3.svg pagesize 5.5inx8.5in ldelete 2 splitall linemerge --tolerance 1.2mm linesimplify --tolerance 0.2mm rotate 270 layout -l -h right -v top 11inx17in ldelete 3 linesort write /Users/cj/Documents/Projects/greeting-cards-2021/inside/11x17/individual/insides-map-onecard-11x17-2.svg
 </dc:source>
-        <dc:date>2022-02-09T18:39:08.305810</dc:date>
+        <dc:date>2022-02-09T18:48:11.679760</dc:date>
       </cc:Work>
     </rdf:RDF>
   </metadata>

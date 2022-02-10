@@ -6,7 +6,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:source>vpype read /Users/cj/Documents/Projects/greeting-cards-2021/inside/person-maps/p2.svg pagesize 5.5inx8.5in ldelete 1 text --font scripts --position 75 330 --align center --size 26 --wrap 375 'This card travelled at least 2679 mi to get to you' text --font cursive --position 40 500 --align left --size 28 --wrap 430 'Person 2,' text --font cursive --position 40 535 --align left --size 28 --wrap 430 'We hope you are doing as well as you can during these crazy times. Please take care and have a very happy new year! ' text --font cursive --position 40 715 --align left --size 28 --wrap 430 Best, text --font cursive --position 40 740 --align left --size 28 --wrap 430 'Colin and Ian' rotate 270 layout -l -h left -v bottom 11inx17in ldelete 3 linesort write /Users/cj/Documents/Projects/greeting-cards-2021/inside/11x17/individual/insides-arctext-onecard-11x17-1.svg
 </dc:source>
-        <dc:date>2022-02-09T18:39:14.447666</dc:date>
+        <dc:date>2022-02-09T18:48:17.990268</dc:date>
       </cc:Work>
     </rdf:RDF>
   </metadata>

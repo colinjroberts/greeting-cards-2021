@@ -13,7 +13,7 @@ which does some optimization of its own. I figure it couldn't hurt.
 Notes about code:
 - After light effort, I couldn't figure out how to use the vpype Python module, so this script
 builds vpype commands and uses os.system() to run everything.
-- This code should be run from the root directory of this project
+- This code should be run from the root directory of this project.
 """
 
 def main():

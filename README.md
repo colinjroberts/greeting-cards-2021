@@ -1,10 +1,10 @@
 # Greeting Cards 2021
 
-*PLACEHOLDER FOR IMAGES*
+![](repo-images/cards2021-card_front.jpg)
 
 Partially automated generation of personalized greeting cards for friends and family in 2021, made using a 2-D plotter.
 
-## Run this Code
+## Installation
 Like for many projects, it is recommended you use a [https://docs.python.org/3/tutorial/venv.html](virtual environment) to avoid package conflicts. 
 
 ```
@@ -73,9 +73,9 @@ A table of recipient data. This year's spreadsheet contained the following colum
 These are one map per location, for example one svg for the USA, one svg covering several continents and the atlantic ocean, one svg for my state, etc. Each template map has 3 layers in this order: map, arc from me (sender) to the recipient, and bounding box rectangle (5.5in x 8.5in; 139.7mm x 215.9mm) used later for checking positioning.
 
 Map template files are included in the templates folder (licenses below) as examples of how the code can be used. Users should provide their own maps.
-Washington modified from [https://commons.wikimedia.org/wiki/File:Map_of_Washington_counties,_blank.svg](Wikipedia) - Public Domain
-USA modified from [https://www.amcharts.com/svg-maps/?map=usa](amCharts) - [https://creativecommons.org/licenses/by-nc/4.0/](Creative Commons Attribution-NonCommercial 4.0 International License)
-Atlantic and Pacific generated using [https://www.amcharts.com/docs/v4/](amCharts v4) - [https://creativecommons.org/licenses/by-nc/4.0/](Creative Commons Attribution-NonCommercial 4.0 International License)
+- Washington modified from [https://commons.wikimedia.org/wiki/File:Map_of_Washington_counties,_blank.svg](Wikipedia) - Public Domain
+- USA modified from [https://www.amcharts.com/svg-maps/?map=usa](amCharts) - [https://creativecommons.org/licenses/by-nc/4.0/](Creative Commons Attribution-NonCommercial 4.0 International License)
+- Atlantic and Pacific generated using [https://www.amcharts.com/docs/v4/](amCharts v4) - [https://creativecommons.org/licenses/by-nc/4.0/](Creative Commons Attribution-NonCommercial 4.0 International License)
 
 **Custom Map Files**
 After creating template map svgs, I used the spreadsheet to copy one template for each person named using the MapFullFileName field. Then I manually opened each file and adjusted the arc on layer 2 to show roughly the correct sender and recipient locations.
@@ -93,12 +93,7 @@ If you are looking to replicate a process like this, these are the general steps
 - Generate custom maps for each person
 - Generate aggregated card inside files for everyone (1 file for each of 2 layers, different card in each corner)
 - Print card outsides, flip paper, print card insides
-
-**Aggregated Card Outside Files**
-*PLACEHOLDER FOR IMAGES*
-
-**Addregated Card Inside Files**
-*PLACEHOLDER FOR IMAGES*
+- Cut cards, stuff envelopes, and mail!
 
 ## Ideas and Description 
 Last year, The Partner (TP) and I tried to lift our quarantined spirits with an [AxiDraw](https://www.axidraw.com/) that we used to make a bunch of holiday cards for friends and family. This year, I wanted to build on those and make something that...
@@ -161,7 +156,6 @@ In an attempt to reduce code paths (having already duplicated code for handling 
 ### Envelope
 Last year, I had the [AxiDraw](https://www.axidraw.com/) hooked up to an old laptop that could run InkScape and used [AxiDraw's excellent Hershey merge tool](https://wiki.evilmadscientist.com/AxiDraw_Merge). This year, the AxiDraw is connected to a RaspberryPi running [Saxi](https://github.com/nornagon/saxi) which is a little more streamlined and convenient than AxiDraw tools for InkScape. As for the card insides, I used [vpype](https://github.com/abey79/vpype) to generate and layout the text for the envelopes, saving each one as a separate svg that I'd manually drop into Saxi to plot.
 
-
 ### Printing
 Last year, I printed each card individually. I learned that one aspect of plotting I like to avoid is the setup and restarting of the plotter. This year, I bought large format paper so I could print multiple cards at a time and reduce the number of times I need to set up new plots. 
 
@@ -170,6 +164,7 @@ First I printed all of the letters that would be inserted into the cards (two le
 Finally, I printed all of the cards. Because I used [Saxi](https://github.com/nornagon/saxi) as the plotter driver this year, I couldn't make use of the [AxiDraw](https://github.com/evil-mad/axidraw)'s excellent Hershey merge tool. Instead, as described above, I used vpype to generate each file and plotted them separately.
 
 ### Lessons Learned for Next Year
+
 **Do tedious plotting first**
 
 While I did optimize card printing to reduce the number of times I needed to start a print, I still needed to print each envelope separately. I found myself avoiding this task as it took place toward the end of the project after all the fun stuff was done. Next year, I will likely try to address all of the envelopes early on in the process while my project energy is still high.

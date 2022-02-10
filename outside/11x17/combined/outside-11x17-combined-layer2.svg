@@ -6,7 +6,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:source>vpype read /Users/cj/Documents/Projects/greeting-cards-2021/outside/11x17/individual/outside-11x17-one-per-page-11x17-layer2-left-top.svg read /Users/cj/Documents/Projects/greeting-cards-2021/outside/11x17/individual/outside-11x17-one-per-page-11x17-layer2-left-bottom.svg read /Users/cj/Documents/Projects/greeting-cards-2021/outside/11x17/individual/outside-11x17-one-per-page-11x17-layer2-right-top.svg read /Users/cj/Documents/Projects/greeting-cards-2021/outside/11x17/individual/outside-11x17-one-per-page-11x17-layer2-right-bottom.svg linesort write /Users/cj/Documents/Projects/greeting-cards-2021/outside/11x17/combined/outside-11x17-combined-layer2.svg
 </dc:source>
-        <dc:date>2022-02-09T17:33:44.787558</dc:date>
+        <dc:date>2022-02-09T18:48:05.728923</dc:date>
       </cc:Work>
     </rdf:RDF>
   </metadata>

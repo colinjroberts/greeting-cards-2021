@@ -6,7 +6,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:source>vpype read /Users/cj/Documents/Projects/greeting-cards-2021/outside/11x17/individual/card-outside-with-border.svg pagesize 5.5inx8.5in ldelete 1 splitall linemerge --tolerance 1.2mm linesimplify --tolerance 0.2mm rotate 270 layout -l -h left -v bottom 11inx17in ldelete 3 write /Users/cj/Documents/Projects/greeting-cards-2021/outside/11x17/individual/outside-11x17-one-per-page-11x17-layer2-left-bottom.svg
 </dc:source>
-        <dc:date>2022-02-09T17:33:36.578322</dc:date>
+        <dc:date>2022-02-09T18:47:58.063887</dc:date>
       </cc:Work>
     </rdf:RDF>
   </metadata>
